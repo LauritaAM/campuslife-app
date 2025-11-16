@@ -1,0 +1,45 @@
+/* Global red & black theme */
+body {
+    background-color: #000; /* black background */
+    color: #ff0000; /* red text */
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #8B0000 !important; /* dark red */
+}
+
+.nav-link, .navbar-brand {
+    color: #fff !important; /* white text for contrast */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #ff0000;
+    border-color: #ff0000;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #8B0000;
+    border-color: #8B0000;
+}
+
+/* Footer */
+.footer {
+    background-color: #8B0000; /* dark red */
+    color: #fff;
+}
+
+/* Lists */
+.list-group-item {
+    background-color: #000;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
