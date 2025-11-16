@@ -1,61 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campus Life - Dining & Housing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining & Housing</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark-red">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Campus Life</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="dining&housing.html">Dining & Housing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="map.html">Map</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="index.html">Campus Life App</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="dining-and-housing.html">Dining & Housing</a></li>
+                <li class="nav-item"><a class="nav-link" href="map.html">Campus Map</a></li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
 
-  <div class="container mt-5">
-    <h1>Dining Options</h1>
-    <ul class="list-group mb-5">
-      <li class="list-group-item">Main Cafeteria</li>
-      <li class="list-group-item">Smaller Cafe</li>
-      <li class="list-group-item">Food Court with some food chains</li>
-    </ul>
+<div class="container my-4">
 
-    <h1>Housing Options</h1>
-    <ul class="list-group">
-      <li class="list-group-item">Residence Hall For UnderClassmen A</li>
-      <li class="list-group-item">Residence Hall For UnderClassmen B</li>
-      <li class="list-group-item">Campus Apartments For Upperclassmen</li>
-    </ul>
-  </div>
+    <h1 class="page-title">Dining & Housing</h1>
 
-  <footer class="footer bg-dark text-center text-white py-3 mt-5">
-    <div class="container">
-      <p>© 2025 College Name</p>
+    <h2>Residence Halls</h2>
+
+    <div class="housing-item">
+        <h3><a href="#resA">Residence Hall for Underclassmen A</a></h3>
+        <img src="images/ResidenceA.jpg" class="item-img" alt="Residence Hall A">
     </div>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+    <div class="housing-item">
+        <h3><a href="#resB">Residence Hall for Underclassmen B</a></h3>
+        <img src="images/ResidenceB.jpg" class="item-img" alt="Residence Hall B">
+    </div>
+
+    <div class="housing-item">
+        <h3><a href="#apartments">Apartments for Upperclassmen</a></h3>
+        <img src="images/Apartments.jpg" class="item-img" alt="Apartments">
+    </div>
+
+    <hr>
+
+    <h2>Dining Halls</h2>
+
+    <div class="dining-item">
+        <h3>Main Dining Hall</h3>
+        <img src="images/maindinning.jpg" class="item-img" alt="Main Dining Hall">
+    </div>
+
+    <div class="dining-item">
+        <h3>Secondary Dining Hall</h3>
+        <img src="images/smalldining.jpg" class="item-img" alt="Secondary Dining Hall">
+    </div>
+
+    <div class="dining-item">
+        <h3>Food Court</h3>
+        <img src="images/foodcourt.jpg" class="item-img" alt="Food Court">
+    </div>
+
+    <hr>
+
+    <section id="resA">
+        <h2>Residence Hall for Underclassmen A</h2>
+        <img src="images/Picture1.jpg" class="details-img" alt="Inside Residence Hall A">
+        <p>A cozy hall for first and second-year students. Includes study lounges, laundry, and shared bathrooms.</p>
+    </section>
+
+    <section id="resB">
+        <h2>Residence Hall for Underclassmen B</h2>
+        <img src="images/Picture2.jpg" class="details-img" alt="Inside Residence Hall B">
+        <p>Modern living spaces with updated amenities, common rooms, suite-style bathrooms.</p>
+    </section>
+
+    <section id="apartments">
+        <h2>Apartments for Upperclassmen</h2>
+        <img src="images/Picture3.jpg" class="details-img" alt="Inside Apartments">
+        <p>Private or semi-private apartments with full kitchens, living areas, and on-site parking.</p>
+    </section>
+
+</div>
+
+<footer class="footer">
+    <p>© 2025 College Name</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
