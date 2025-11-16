@@ -1,17 +1,16 @@
-/* Global red & black theme */
 body {
-    background-color: #000; /* black background */
-    color: #ff0000; /* red text */
+    background-color: #1a1a1a; 
+    color: #ff0000;
     font-family: Arial, sans-serif;
 }
 
-/* Navigation bar */
+
 .navbar {
-    background-color: #8B0000 !important; /* dark red */
+    background-color: #8B0000 !important; 
 }
 
 .nav-link, .navbar-brand {
-    color: #fff !important; /* white text for contrast */
+    color: #fff !important; 
 }
 
 .nav-link.active {
@@ -19,7 +18,7 @@ body {
     text-decoration: underline;
 }
 
-/* Buttons */
+
 .btn-primary {
     background-color: #ff0000;
     border-color: #ff0000;
@@ -31,15 +30,15 @@ body {
     border-color: #8B0000;
 }
 
-/* Footer */
+
 .footer {
-    background-color: #8B0000; /* dark red */
+    background-color: #8B0000;
     color: #fff;
 }
 
-/* Lists */
+
 .list-group-item {
-    background-color: #000;
+    background-color: #1a1a1a; 
     color: #ff0000;
     border: 1px solid #ff0000;
 }
