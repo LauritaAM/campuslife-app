@@ -3,61 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CampusLife App</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Campus Life Super App - Home</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
-    <h1>CampusLife App</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#clubs">Clubs</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-red">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Campus Life App</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="dining-and-housing.html">Dining & Housing</a></li>
+          <li class="nav-item"><a class="nav-link" href="map.html">Campus Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="hero">
+    <img src="images/college picture.jpg" class="img-fluid hero-img" alt="College Campus">
+    <div class="hero-text">
+      <h1>Welcome to Campus Life</h1>
+      <p>Your one-stop resource for campus living.</p>
+    </div>
   </header>
 
-  <section id="home" class="section">
-    <h2>Welcome!</h2>
-    <p>Your one‑stop hub for everything happening on campus.</p>
-  </section>
+  <section class="container my-4">
+    <div class="row g-4">
 
-  <section id="events" class="section">
-    <h2>Upcoming Events</h2>
-    <div id="events-container">
-      <!-- Events dynamically loaded here -->
+
+      <div class="col-md-6">
+        <div class="info-box p-4 shadow rounded">
+          <h2 class="text-center">Today's Weather</h2>
+          <div id="weather-container" class="text-center"></div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <div class="info-box p-4 shadow rounded">
+          <h2 class="text-center">Today's Activities</h2>
+          <div id="activities-container" class="text-center"></div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section id="clubs" class="section">
-    <h2>Clubs</h2>
-    <div id="clubs-container">
-      <!-- Clubs dynamically loaded here -->
-    </div>
-  </section>
 
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-      <label>Name</label>
-      <input type="text" required />
-
-      <label>Email</label>
-      <input type="email" required />
-
-      <label>Message</label>
-      <textarea required></textarea>
-
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2025 CampusLife App</p>
+  <footer class="footer bg-dark text-light text-center py-3">
+    <p>© 2025 College Name</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+
 </body>
 </html>
+
